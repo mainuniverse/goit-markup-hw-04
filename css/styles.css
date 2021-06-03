@@ -180,6 +180,11 @@ ul {
 .hero-discr {
   display: flex;
 }
+.icons {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  color: inherit;
+}
 
 .hero-container {
   margin-right: 30px;
