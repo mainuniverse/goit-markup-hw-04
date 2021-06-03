@@ -148,6 +148,12 @@ ul {
   padding-bottom: 32px;
   margin-left: auto;
 }
+.icons-nav {
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+  background-position: cover;
+}
 
 /* Hero section:  part 1 - slogan and btn */
 .hero {
@@ -184,6 +190,9 @@ ul {
   padding: 25px 100px;
   margin-bottom: 30px;
   color: inherit;
+  padding: 0;
+  border: 1px solid red;
+  background-position: cover;
 }
 
 .hero-container {
