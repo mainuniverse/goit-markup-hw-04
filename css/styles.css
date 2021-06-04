@@ -153,6 +153,10 @@ ul {
   margin: 0;
   border: 1px solid red;
   background-position: cover;
+  fill: var(--secondary-text-color);
+}
+.icons-nav:hover {
+  color: var(--secondary-background-color);
 }
 
 /* Hero section:  part 1 - slogan and btn */
