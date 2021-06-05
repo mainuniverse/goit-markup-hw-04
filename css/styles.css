@@ -286,8 +286,12 @@ ul {
 .team-member {
   background-color: var(--white-color);
   text-decoration: none;
-  box-shadow: 0px 4px 4px 0px #00000040;
   margin-right: 30px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  border-radius: 3px;
 }
 
 .team-member:last-child {
@@ -359,9 +363,10 @@ ul {
 .clients-list {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border-radius: 4px;
   margin-right: 30px;
   align-items: center;
+  border: 1px solid var(--social-links-color);
 }
 .clients-list:last-child {
   margin-right: 0;
@@ -555,6 +560,7 @@ ul {
   margin-top: 20px;
   fill: var(--white-color);
   box-shadow: 0px 4px 4px 0px #00000040;
+  background: rgba(255, 255, 255, 0.1);
 }
 /* 
 .social-links-footer:last-child {
