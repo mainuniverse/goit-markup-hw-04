@@ -23,18 +23,28 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <nav class="container nav ">
+      <nav class="container nav">
         <a href="#" class="logo">Web<span class="logo-part">Studio</span></a>
         <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="item"><a href="#" class="link current">Портфолио</a></li>
+          <li class="item"><a href="#" class="link current">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="item"><a href="#" class="link">Контакты</a></li>
         </ul>
         <ul class="auth-nav list">
-          <li class="item tel">
-            <a href="mailto:info@devstudio.com" class="link tel-mail">info@devstudio.com</a>
+          <li class="item-nav">
+            <a href="mailto:info@devstudio.com" class="icons-nav-list">
+              <svg class="icons-nav" width="16" height="20">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+            </a>
+            <a href="mailto:info@devstudio.com" class="link tel-mail"> info@devstudio.com</a>
           </li>
-          <li class="item tel">
+          <li class="item-nav">
+            <a href="tel:+380961111111" class="icons-nav-list">
+              <svg class="icons-nav" width="20" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+            </a>
             <a href="tel:+380961111111" class="link tel-mail">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -109,18 +119,53 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer" >
-      <div class="container">
-        <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
-        <address class="address">
-          <ul class="list">
-            <li class="address-items">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="address tel-mail">info@devstudio.com</a>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="adress-container">
+          <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
+          <address class="address">
+            <ul class="list">
+              <li class="address-items">г. Киев, пр-т Леси Украинки, 26</li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address tel-mail">info@devstudio.com</a>
+              </li>
+              <li><a href="tel:+380961111111" class="address tel-mail">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-footer">
+          <a href="#" class="connect">присоединяйтесь</a>
+          <ul class="list social-container">
+            <li class="">
+              <a href="#" class="social-links-footer">
+                <svg class="social-icons-footer" width="44" height="44">
+                  <use href="images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a href="tel:+380961111111" class="address tel-mail">+38 096 111 11 11</a></li>
+            <li class="">
+              <a href="#" class="social-links-footer">
+                <svg class="social-icons-footer" width="44" height="44">
+                  <use href="images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <a href="#" class="social-links-footer">
+                <svg class="social-icons-footer" width="44" height="44">
+                  <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <a href="#" class="social-links-footer">
+                <svg class="social-icons-footer" width="44" height="44">
+                  <use href="images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
