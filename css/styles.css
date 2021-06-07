@@ -144,6 +144,7 @@ p {
 }
 .item-nav {
   display: flex;
+  align-items: center;
   margin-right: 50px;
   margin-left: auto;
   margin-bottom: 0;
@@ -196,14 +197,20 @@ p {
   background-size: cover;
   text-decoration: none;
   margin: 0;
-  padding: 200px 15px 280px 15px;
   border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1600px;
+  display: inline-block;
+  align-items: center;
+  width: 100%;
 }
 .slogan {
   font-size: 44px;
   line-height: 1.364;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -287,17 +294,16 @@ p {
   display: flex;
   margin-top: 50px;
   flex-basis: calc(100% / 4 - 30px);
+  padding-bottom: 30px;
 }
 .team-member {
   background-color: var(--white-color);
   text-decoration: none;
   margin-right: 30px;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  padding-bottom: 30px;
 }
 
 .team-member:last-child {
@@ -315,7 +321,7 @@ p {
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 }
 
@@ -323,7 +329,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   padding: 0;
   flex-basis: calc(100% / 6 - 10px);
 }
@@ -417,13 +422,14 @@ li.social-icons-list:first-child {
   color: var(--white-color);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.185;
+  line-height: 1.85;
   letter-spacing: 0.06em;
   text-align: center;
   padding: 10px 32px;
   outline: none;
   border: none;
   border-radius: 4px;
+  margin-bottom: 200px;
 }
 .btn {
   font-size: 16px;
@@ -507,13 +513,13 @@ li.social-icons-list:first-child {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 /* Footer */
 .footer {
   background-color: var(--accent-color-background);
   text-decoration: none;
   text-align: left;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-container {
   display: flex;
@@ -547,15 +553,11 @@ li.social-icons-list:first-child {
 .tel-mail {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
 }
 .address.tel-mail:hover {
   cursor: pointer;
 }
 
-.social-footer {
-  padding-top: 12px;
-}
 .connect {
   font-family: Roboto;
   font-size: 14px;
@@ -563,28 +565,30 @@ li.social-icons-list:first-child {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-left: 12px;
+  padding-top: 12px;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .social-links-footer {
   display: flex;
   align-items: center;
-  margin-right: 10px;
   padding: 12px;
   border-radius: 50%;
-  margin-top: 20px;
   fill: var(--white-color);
   background: rgba(255, 255, 255, 0.1);
 }
-/* 
-.social-links-footer:last-child {
+
+.social-list-footer {
+  margin-right: 10px;
+}
+.social-list-footer:last-child {
   margin-right: 0;
 }
- */
+
 .social-icons-footer {
   width: 22px;
   height: 22px;
