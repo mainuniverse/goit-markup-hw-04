@@ -28,7 +28,7 @@ body {
   margin: 0;
   text-align: center;
   width: 100%;
-
+  fill: var(--secondary-text-color);
   align-items: center;
 }
 img {
@@ -125,14 +125,7 @@ p {
 .list .tel-mail {
   color: var(--secondary-text-color);
 }
-/* .link:hover,
-.tel-mail:hover,
-.link:focus,
-.tel-mail:focus,
-.link:active,
-.tel-mail:active {
-  color: var(--secondary-background-color);
-} */
+
 .current {
   color: var(--accent-color);
 }
@@ -155,13 +148,9 @@ p {
   margin-left: auto;
   margin-bottom: 0;
   padding: 0;
-  border: 1px solid red;
 }
 .item-nav:last-child {
   margin-right: 0;
-}
-.tel-mail .icons-nav {
-  fill: currentColor;
 }
 .icons-nav {
   align-items: center;
@@ -173,6 +162,12 @@ p {
   stroke-width: 0;
   stroke: currentColor;
 }
+
+.tel-mail .icons-nav {
+  fill: currentColor;
+}
+
+/* fill: var(--secondary-text-color); */
 
 .item-nav:hover,
 .item-nav:active {
@@ -212,7 +207,7 @@ p {
   margin-bottom: 30px;
 }
 
-/* Hero benefits:  part 2 - discription itams */
+/* Hero benefits:  part 2 - discription items */
 
 .hero-discr {
   display: flex;
