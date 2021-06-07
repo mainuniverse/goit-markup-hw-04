@@ -28,6 +28,8 @@ body {
   margin: 0;
   text-align: center;
   width: 100%;
+
+  align-items: center;
 }
 img {
   display: block;
@@ -59,12 +61,6 @@ p {
   padding-right: 15px;
 }
 
-/* 
-ul {
-
-  display: flex;
-} */
-
 /* Header */
 .page-header {
   background-color: var(--white-color);
@@ -74,7 +70,7 @@ ul {
   padding: 0;
   align-items: center;
   text-align: center;
-  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #ececec;
 }
 
 .nav {
@@ -129,18 +125,23 @@ ul {
 .list .tel-mail {
   color: var(--secondary-text-color);
 }
-.link:hover,
+/* .link:hover,
 .tel-mail:hover,
 .link:focus,
 .tel-mail:focus,
 .link:active,
 .tel-mail:active {
   color: var(--secondary-background-color);
-}
+} */
 .current {
   color: var(--accent-color);
 }
 
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--secondary-background-color);
+}
 .auth-nav {
   display: flex;
   align-items: center;
@@ -150,32 +151,46 @@ ul {
 }
 .item-nav {
   display: flex;
-  align-items: center;
   margin-right: 50px;
   margin-left: auto;
   margin-bottom: 0;
   padding: 0;
+  border: 1px solid red;
 }
 .item-nav:last-child {
   margin-right: 0;
 }
+.tel-mail .icons-nav {
+  fill: currentColor;
+}
 .icons-nav {
-  padding: 0;
+  align-items: center;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
 }
 
-.icons-nav-list {
-  fill: var(--secondary-text-color);
-  text-decoration: none;
-  margin-right: 10px;
-  background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-}
-.icons-nav-list:hover,
-.icons-nav-list:active {
+.item-nav:hover,
+.item-nav:active {
   fill: var(--accent-color);
+  color: var(--secondary-background-color);
 }
 /* Hero section:  part 1 - slogan and btn */
+
+.section {
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1600px;
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+}
+
 .hero {
   color: var(--white-color);
   background-color: var(--accent-color-background);
@@ -186,8 +201,7 @@ ul {
   background-size: cover;
   text-decoration: none;
   margin: 0;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding: 200px 15px 280px 15px;
   border-radius: 4px;
 }
 .slogan {
@@ -195,14 +209,11 @@ ul {
   line-height: 1.364;
   text-align: center;
   text-transform: uppercase;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 /* Hero benefits:  part 2 - discription itams */
-.section {
-  padding-top: 94px;
-}
+
 .hero-discr {
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
@@ -321,19 +332,22 @@ ul {
   padding: 0;
   flex-basis: calc(100% / 6 - 10px);
 }
+.social-icons-list {
+  margin-left: 10px;
+}
+li.social-icons-list:first-child {
+  margin-left: 0;
+}
 
 .social-links {
   display: flex;
   align-items: center;
-  margin-left: 10px;
   padding: 12px;
   border-radius: 50%;
   align-items: center;
   fill: var(--social-links-color);
 }
-.social-links:first-child {
-  margin-left: 0;
-}
+
 .social-icons {
   width: 22px;
   height: 22px;
@@ -361,11 +375,13 @@ ul {
 }
 
 .clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border-radius: 4px;
   margin-right: 30px;
-  align-items: center;
   border: 1px solid var(--social-links-color);
 }
 .clients-list:last-child {
@@ -374,15 +390,19 @@ ul {
 .icons-clients-list {
   fill: var(--social-links-color);
   list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
 }
+.clients-list:hover,
+.clients-list:focus,
 .icons-clients-list:hover,
 .icons-clients-list:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.icons-clients {
-  padding-top: 23px;
-}
 /* Buttons */
 .btn-container {
   display: flex;
@@ -418,12 +438,14 @@ ul {
   background-color: var(--other-background-color);
   color: var(--primary-text-color);
   padding: 6px 22px;
-  margin-left: 8px;
+
   border: none;
   border-radius: 4px;
 }
-
-.site-btn .btn + .btn {
+.btn-list {
+  margin-left: 8px;
+}
+.btn-list:first-child {
   margin-left: 0;
 }
 
@@ -512,8 +534,11 @@ ul {
   text-decoration: none;
   color: var(--white-color);
 }
-.address {
+.address-items {
   padding-top: 20px;
+  padding-bottom: 9px;
+}
+.address {
   padding-bottom: 60px;
 }
 
@@ -524,7 +549,7 @@ ul {
   line-height: 1.714;
   font-style: normal;
 }
-.address.tel-mail {
+.tel-mail {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 9px;
@@ -546,7 +571,6 @@ ul {
   text-align: left;
   text-transform: uppercase;
   color: var(--white-color);
-
   padding-left: 12px;
   text-decoration: none;
 }
@@ -559,7 +583,6 @@ ul {
   border-radius: 50%;
   margin-top: 20px;
   fill: var(--white-color);
-  box-shadow: 0px 4px 4px 0px #00000040;
   background: rgba(255, 255, 255, 0.1);
 }
 /* 
